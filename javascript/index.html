@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-
-<body>
-  <h1 id="heading">Hello World !</h1>
-  <button onClick={handle()}>Change</button>
-  <script src="./script.js">
-  </script>
-</body>
-
+  <body>
+    <h1 id="heading">Hello World !</h1>
+    <div id="main">
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
+    <input id="name" type="text" placeholder="Enter Your Name" />
+    <p id="error"></p>
+    <button id="submit-btn" type="button">Submit</button>
+    <button id="change-btn">Change</button>
+    <script src="./script.js"></script>
+  </body>
 </html>

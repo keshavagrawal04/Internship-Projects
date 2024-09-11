@@ -150,7 +150,8 @@
                 <div class="d-flex">
                     <a href="#" class="forgot-password">Forgot password?</a>
                 </div>
-                <button type="submit" class="btn btn-primary mt-5">Login</button>
+                <button onclick="handleLoginClick()" id="login-btn" type="submit"
+                    class="btn btn-primary mt-5">Login</button>
                 <div class="signup">
                     <span>Don't have an account? <a href="#">Signup now</a></span>
                 </div>
@@ -161,7 +162,21 @@
             <p>Let's get connected</p>
         </div>
     </div>
-
+    <script>
+        function handleLoginClick(e) {
+            e.preventDefault();
+            if (emailInput.value && passwordInput.value) {
+                let email = emailInput.value;
+                console.log(`${email} \n ${passwordInput.value}`);
+            } else {
+                alert(
+                    `${!emailInput.value ? "Email" : "Password"} Field is ${emailInput.value
+                    } Required !`
+                );
+            }
+        }
+    </script>
+    <script src="./script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

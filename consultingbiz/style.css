@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --primary-color: "#fff";
+  --secondary-color: "#000";
+}
+
+* {
+  margin: 0;
+  bottom: 0;
+  font-family: "Roboto";
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+.top-header {
+  background-color: #0d2d3e;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.social-media-icons:hover {
+  color: red;
+}
+
+.hero-bg {
+  background-image: url("./assets/hero-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 180px 120px 180px 120px;
+}
+
+.navlink {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.services-icon {
+  color: #eb566c;
+}
+
+.text-white {
+  color: White;
+}
+
+.service-heading {
+  font-size: 50px;
+}
+
+.bg-servcie {
+  background-image: url("./assets/bg-section.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center !important;
+}
+
+.top-services {
+  font-size: 16px;
+  ;
+}
+
+.responsive-f5 {
+  font-size: 18px;
+}
+
+.responsive-f6 {
+  font-size: 16px;
+}
+
+.content-box {
+  transform: translateY(-50px);
+  width: 75%;
+}
+
+.review-bg {
+  background-image: url("./assets/review-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center center !important; */
+}
+
+
+.consultant-bg {
+  background-image: url("./assets/consultant-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center center !important; */
+}
+
+.counter-box {
+  transform: translateY(-60px);
+}
+
+.count-card:hover {
+  background-color: #eb566c !important;
+  color: white;
+}
+
+.responsive-fs-1 {
+  font-size: 28px;
+}
+
+.blog-date {
+  position: absolute;
+  height: 50px;
+  top: -48px;
+  left: 0;
+  color: #011548;
+  background-color: #f7f7f7;
+}
+
+.decoration-none {
+  text-decoration: none;
+  color: white;
+}
+
+.border-bottom {
+  border-bottom: 1px solid white;
+}
+
+.footer-bg {
+  background-image: url("./assets/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes icons-animation {
+  from {
+    transform: rotateX(0);
+  }
+
+  to {
+    transform: rotateX(90deg);
+  }
+}
+
+.social-media-icons {
+  animation-name: icons-animation;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-bg {
+    padding: 40px 0 40px 0;
+    background-position: center;
+  }
+
+  .service-heading {
+    font-size: 20px;
+  }
+
+  .responsive-fs-1 {
+    font-size: 20px;
+  }
+
+  .top-services {
+    font-size: 12px;
+    ;
+  }
+
+  .responsive-f5 {
+    font-size: 14px;
+  }
+
+  .responsive-f6 {
+    font-size: 12px;
+  }
+
+  .content-box {
+    transform: translateY(0);
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .counter-box {
+    transform: translateY(-80px);
+  }
+}
